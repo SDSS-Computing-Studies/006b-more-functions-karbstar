@@ -20,7 +20,8 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
-def triangle(lst):
+def triangle(a,u,i):
+    lst=[a,u,i]
     x=max(lst)
     y=min(lst)
     z= (sum(lst)-x)-y
