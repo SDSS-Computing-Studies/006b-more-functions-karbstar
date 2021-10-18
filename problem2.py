@@ -20,3 +20,24 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
+def triangle(lst):
+    x=max(lst)
+    y=min(lst)
+    z= (sum(lst)-x)-y
+    t= (y**2+z**2)*(1/2)
+    if t == x:
+        return 2
+    else:
+        if t<z:
+            if y+z == t:
+                return 1
+            else:
+                return 0
+        else:
+           if t>z:
+                if y+z == t:
+                    return 3
+                else:
+                   return 0
+
+    

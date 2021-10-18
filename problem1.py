@@ -12,4 +12,12 @@ Sample assertions:
 assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
+def converTemp(x,y):
+    if y == 'c':
+        z=(x * 1.8) + 32
+        return z 
+    else:
+        z=(x - 32) * (5/9)
+        return z
+
 
