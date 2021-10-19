@@ -20,12 +20,14 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
+import math
 def triangle(a,u,i):
     lst=[a,u,i]
     x=max(lst)
     y=min(lst)
     z= (sum(lst)-x)-y
-    t= (y**2+z**2)*(1/2)
+
+    t= math.sqrt((y**2+z**2))
     print(x,y,z,t)
     if t == x:
         return 2
