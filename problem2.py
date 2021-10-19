@@ -33,17 +33,16 @@ def triangle(a,u,i):
         return 2
     else:
         if t<x:
-            if y+z == t:
+            if y+z == x:
                 return 1
             else:
                 return 0
         else:
            if t>x:
-                if y+z == t:
-                    return 3
+                if y+z == x:
+                    return 1
                 else:
                    return 0
                    
 
 
-assert triangle(12,5,13) == 2
