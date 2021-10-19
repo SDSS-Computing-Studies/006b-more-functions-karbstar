@@ -25,7 +25,6 @@ def triangle(a,u,i):
     x=max(lst)
     y=min(lst)
     z= (sum(lst)-x)-y
-    x = x**2
     t= (y**2+z**2)*(1/2)
     print(x,y,z,t)
     if t == x:
@@ -42,3 +41,7 @@ def triangle(a,u,i):
                     return 3
                 else:
                    return 0
+                   
+
+
+assert triangle(12,5,13) == 2
